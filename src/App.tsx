@@ -1,7 +1,11 @@
+import { Button } from "./components/ui/button"
+
 function App() {
     return (
         <>
-            <h1>hello, world!</h1>
+            <div className="p-5 flex justify-center">
+                <Button>ShadcnUI Button</Button>
+            </div>
         </>
     )
 }
