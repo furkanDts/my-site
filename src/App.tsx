@@ -1,11 +1,19 @@
-import { Button } from "./components/ui/button"
+import HomePage from './pages/Home/HomePage'
+import { createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, Outlet } from 'react-router-dom'
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <HomePage />,
+    },
+])
 
 function App() {
     return (
         <>
-            <div className="p-5 flex justify-center">
-                <Button>ShadcnUI Button</Button>
-            </div>
+            <RouterProvider router={router} />
+            <Outlet />
         </>
     )
 }
